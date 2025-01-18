@@ -1,8 +1,8 @@
 # Chatbot Layanan Kampus Universitas Padjadjaran
 
-<div style="text-align: center;">
-  <img src="unpad.png" alt="alt text" width="160"/>
-</div>
+<p align="center">
+  <img src="unpad.png" alt="alt text" width="300"/>
+</p>
 
 ## Deskripsi Proyek
 Proyek ini adalah chatbot yang dirancang untuk memberikan informasi terkait layanan kampus di Universitas Padjadjaran. Chatbot ini memanfaatkan **Dialogflow** untuk pemrosesan bahasa alami dan **Dialogflow Messenger** untuk integrasi dengan website demo. Fitur chatbot ini meliputi informasi terkait cara mengakses KRS, status her-registrasi, kegiatan perkuliahan, dan layanan akademik lainnya.
