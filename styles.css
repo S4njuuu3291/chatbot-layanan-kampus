@@ -1,0 +1,31 @@
+.text-orange {
+    color: orange;
+}
+
+.bg-light-gray {
+    background-color: #f7f5f5; /* Warna abu-abu terang */
+}
+
+.bg-orange {
+    background-color: rgb(227, 184, 120); /* Warna abu-abu terang */
+}
+
+df-messenger {
+    --df-messenger-bot-message-background: #ff7043;  /* Warna latar belakang pesan bot (oranye) */
+    --df-messenger-bot-message: #ffcc80;  /* Warna latar belakang pesan pengguna (oranye muda) */
+    --df-messenger-button-titlebar-color: #fc8804;   /* Warna teks pesan bot (putih) */
+    --df-messenger-bot-message-text-color: #ffffff;   /* Warna teks pesan bot (putih) */
+    --df-messenger-user-message-text-color: #000000;  /* Warna teks pesan pengguna (hitam) */
+    --df-messenger-header-background-color: orange;  /* Warna latar belakang header (oranye) */
+    --df-messenger-header-text-color: #ffffff;         /* Warna teks header (putih) */
+    --df-messenger-chat-background-color: #ffffff;     /* Warna latar belakang keseluruhan dialog (oranye muda) */
+    --df-messenger-font-color: #030302;           /* Membuat sudut lebih melengkung */
+    --df-messenger-chat-border-radius: 10px; 
+    z-index: -9999999 !important;          /* Membuat sudut lebih melengkung */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

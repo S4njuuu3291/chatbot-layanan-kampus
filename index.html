@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light-gray">
+
+    <div class="container mt-5 text-center ">
+        <h1 class="text-orange">Demo Chatbot Kampus</h3>
+        
+        <p class="mt-4">
+            <strong>
+                Tanyakan apa saja terkait informasi administrasi dan akademik anda</p>
+            </strong>
+        <img src="unpad.png" alt="unpad" class="img-fluid mt-5 w-25">
+
+    </div>
+
+    <!-- Dialogflow Messenger Script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="PadBot"
+    agent-id="1129dcb7-a4be-4462-9e11-05972e4a1bd5"
+    language-code="id"
+    expand = "true"
+    ></df-messenger>
+
+    <footer class="bg-orange text-black text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">Created with ❤️ by Sanju</p>
+            <small>© 2025 Chatbot Kampus. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //To minimise the height of chatbox
+        $(document).ready(function() {
+            window.addEventListener('dfMessengerLoaded', function (event) {
+            $r1 = document.querySelector("df-messenger");
+            $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+            $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+            var sheet = new CSSStyleSheet;
+            // manage box height from here
+            sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 450px;width: 350px; }`);
+            $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+            });
+        });
+    </script>
+</body>
+</html>
